@@ -48,8 +48,24 @@
   justify-content: space-between;
   align-items: center;
 }
-/* header */
 
+.bg-gray{
+    background-color: var(--var-dirtywhite);
+}
+
+/* #region column */
+.col-3 {
+    width: calc((100%/12)*3);
+}
+.col-6 {
+    width: calc((100%/12)*6);
+}
+.col-9 {
+    width: calc((100%/12)*9);
+}
+/* #endregion */
+
+/* #region header */
 header a {
   text-decoration: none;
 }
@@ -93,7 +109,7 @@ a.button {
 }
 
 .smallcontainer .macbutton {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   background-color: white;
@@ -103,7 +119,7 @@ a.button {
 }
 
 .smallcontainer .desktopbutton {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
     background-color: var(--var-gray);
@@ -112,3 +128,15 @@ a.button {
     border-radius: 1.5rem;
   }
   
+  /* #endregion */
+
+/* main */
+/* invite */
+main{
+    padding: 5rem 0;
+}
+
+main .invite{
+    padding: 3rem 0:
+}
+
