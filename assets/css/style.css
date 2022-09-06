@@ -39,7 +39,6 @@
 
 .row {
   display: flex;
-  flex: wrap;
   gap: 1rem;
 }
 
@@ -51,6 +50,12 @@
 
 .bg-gray{
     background-color: var(--var-dirtywhite);
+}
+
+.arrow {
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+   
 }
 
 /* #region column */
@@ -131,12 +136,46 @@ a.button {
   /* #endregion */
 
 /* main */
-/* invite */
 main{
     padding: 5rem 0;
 }
 
-main .invite{
-    padding: 3rem 0:
+/* invite/find/fandom/keep_intouch*/
+main .invite, main .find, main .fandom, main .keep_in_touch {
+    padding: 3rem 0;
 }
 
+.invite h2, .find h2, .fandom h2, .keep_in_touch h2{
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.invite p, .find p, .fandom p, .keep_in_touch p{
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.keep_in_touch{
+    text-align: center;
+}
+
+.keep_in_touch h3{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.keep_in_touch .keepbutton{
+    padding: 2rem;
+}
+.keep_in_touch .bottonblue{
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        background-color: var(--var-lightblue);
+        color: white;
+        padding: 0.7rem;
+        border-radius: 1.5rem;
+      
+}
