@@ -1,0 +1,114 @@
+/* color palette */
+:root {
+  --var-blue: #255ee9;
+  --var-lightblue: #7289da;
+  --var-dirtywhite: #f6f6f6;
+  --var-gray: #23272a;
+}
+
+/* #region common rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* #endregion common rules */
+
+/* #region utility */
+.site_header {
+  background-image: url(../img/jumbo.png);
+  padding: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.smallcontainer {
+  width: 60%;
+  max-width: 1000px;
+  margin: 11rem auto 6rem auto;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex: wrap;
+  gap: 1rem;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* header */
+
+header a {
+  text-decoration: none;
+}
+.menu a {
+  padding: 0.8rem;
+  color: white;
+  font-weight: 300;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+a.button {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 0.7rem;
+  border-radius: 1.5rem;
+}
+
+/* header small container */
+.smallcontainer .title {
+  color: white;
+  font-size: 3rem;
+  padding: 0 0 2rem 0;
+}
+
+.smallcontainer .legend {
+  color: white;
+  padding: 0 4rem;
+  line-height: 200%;
+}
+
+.smallcontainer .herobutton{
+    padding: 2rem;
+}
+
+.herobutton>a{
+    margin: 0 0.5rem;
+}
+
+.smallcontainer .macbutton {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 0.7rem;
+  border-radius: 1.5rem;
+}
+
+.smallcontainer .desktopbutton {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: var(--var-gray);
+    color: white;
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+  }
+  
