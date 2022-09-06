@@ -6,7 +6,7 @@
   --var-gray: #23272a;
 }
 
-/* #region common rules */
+/*#region common rules */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@
 }
 /* #endregion common rules */
 
-/* #region utility */
+/*#region utility */
 .site_header {
   background-image: url(../img/jumbo.png);
   padding: 1rem;
@@ -48,33 +48,43 @@
   align-items: center;
 }
 
-.bg-gray{
-    background-color: var(--var-dirtywhite);
+.bg-gray {
+  background-color: var(--var-dirtywhite);
 }
 
 .arrow {
-    padding-right: 0.5rem;
-    font-size: 1.5rem;
-   
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
 }
 
 /* #region column */
 .col-3 {
-    width: calc((100%/12)*3);
+  width: calc((100% / 12) * 3);
 }
 .col-6 {
-    width: calc((100%/12)*6);
+  width: calc((100% / 12) * 6);
 }
 .col-9 {
-    width: calc((100%/12)*9);
+  width: calc((100% / 12) * 9);
 }
 /* #endregion */
 
-/* #region header */
+/* #endregion */
+
+/*#region header */
 header a {
   text-decoration: none;
 }
+div .logo, div .login{
+    flex-basis: 20%;
+}
+
+div .flexlogin{
+    display: flex;
+    justify-content: flex-end;
+}
 .menu a {
+    font-size: 1.1rem;
   padding: 0.8rem;
   color: white;
   font-weight: 300;
@@ -105,12 +115,12 @@ a.button {
   line-height: 200%;
 }
 
-.smallcontainer .herobutton{
-    padding: 2rem;
+.smallcontainer .herobutton {
+  padding: 2rem;
 }
 
-.herobutton>a{
-    margin: 0 0.5rem;
+.herobutton > a {
+  margin: 0 0.5rem;
 }
 
 .smallcontainer .macbutton {
@@ -124,58 +134,75 @@ a.button {
 }
 
 .smallcontainer .desktopbutton {
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
-    background-color: var(--var-gray);
-    color: white;
-    padding: 0.7rem;
-    border-radius: 1.5rem;
-  }
-  
-  /* #endregion */
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: var(--var-gray);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 1.5rem;
+}
 
-/* main */
-main{
-    padding: 5rem 0;
+/* #endregion */
+
+/*#region main */
+main {
+  padding: 5rem 0;
 }
 
 /* invite/find/fandom/keep_intouch*/
-main .invite, main .find, main .fandom, main .keep_in_touch {
-    padding: 3rem 0;
+main .invite,
+main .find,
+main .fandom,
+main .keep_in_touch {
+  padding: 3rem 0;
 }
 
-.invite h2, .find h2, .fandom h2, .keep_in_touch h2{
-    font-size: 2.5rem;
-    padding-bottom: 1.5rem;
+.invite h2,
+.find h2,
+.fandom h2,
+.keep_in_touch h2 {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
 }
 
-.invite p, .find p, .fandom p, .keep_in_touch p{
-    font-size: 1rem;
-    line-height: 150%;
+.invite p,
+.find p,
+.fandom p,
+.keep_in_touch p {
+  font-size: 1rem;
+  line-height: 150%;
+}
+.invite .col-9, .fandom .col-9{
+    display:flex ;
+    justify-content: flex-start;
 }
 
-.keep_in_touch{
-    text-align: center;
+.find .col-9 {
+    display: flex;
+    justify-content: flex-end;
+}
+.keep_in_touch {
+  text-align: center;
 }
 
-.keep_in_touch h3{
-    background-image: url(../img/stars.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
+.keep_in_touch h3 {
+  font-size: 1.8rem;
+  background-image: url(../img/stars.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.keep_in_touch .keepbutton{
-    padding: 2rem;
+.keep_in_touch .keepbutton {
+  padding: 2rem;
 }
-.keep_in_touch .bottonblue{
-        font-size: 1rem;
-        font-weight: 500;
-        text-decoration: none;
-        background-color: var(--var-lightblue);
-        color: white;
-        padding: 0.7rem;
-        border-radius: 1.5rem;
-      
+.keep_in_touch .bottonblue {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: var(--var-lightblue);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 1.5rem;
 }
+/* #endregion main */
